@@ -79,6 +79,14 @@ int main()
 			world.VisualizeAllBounds(window);
 			window.display(); 
 		}
+		if (duckMS > 2000) {
+			duckMS = 0; 
+			PhysicsSprite& duck = ducks.Create();
+			duck.setTexture(duckTex);
+			duck.setCenter();
+			duck.setVelocity();
+
+		}
 	}
 }
 
